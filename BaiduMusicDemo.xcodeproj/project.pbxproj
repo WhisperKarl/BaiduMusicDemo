@@ -15,6 +15,16 @@
 		CB1932801D2A9D78000F0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB19327E1D2A9D78000F0916 /* LaunchScreen.storyboard */; };
 		CB19328B1D2A9D78000F0916 /* BaiduMusicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB19328A1D2A9D78000F0916 /* BaiduMusicDemoTests.m */; };
 		CB1932961D2A9D78000F0916 /* BaiduMusicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1932951D2A9D78000F0916 /* BaiduMusicDemoUITests.m */; };
+		CB1C6E9A1D2AA6860090C57B /* libTingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6E971D2AA6860090C57B /* libTingSDK.a */; };
+		CB1C6E9B1D2AA6860090C57B /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1C6E991D2AA6860090C57B /* ic_close.png */; };
+		CB1C6E9D1D2AA8050090C57B /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6E9C1D2AA8050090C57B /* libstdc++.6.0.9.tbd */; };
+		CB1C6E9F1D2AA80F0090C57B /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6E9E1D2AA80F0090C57B /* libc++.1.tbd */; };
+		CB1C6EA11D2AA81F0090C57B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA01D2AA81F0090C57B /* libz.tbd */; };
+		CB1C6EA31D2AA8240090C57B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA21D2AA8240090C57B /* CoreFoundation.framework */; };
+		CB1C6EA51D2AA82D0090C57B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA41D2AA82D0090C57B /* CoreMedia.framework */; };
+		CB1C6EA71D2AA8360090C57B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */; };
+		CB1C6EA91D2AA83F0090C57B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA81D2AA83F0090C57B /* AVFoundation.framework */; };
+		CB1C6EAB1D2AA8470090C57B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,35 @@
 		CB1932911D2A9D78000F0916 /* BaiduMusicDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiduMusicDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1932951D2A9D78000F0916 /* BaiduMusicDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMusicDemoUITests.m; sourceTree = "<group>"; };
 		CB1932971D2A9D78000F0916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1C6E841D2AA6860090C57B /* APlayerDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APlayerDefs.h; sourceTree = "<group>"; };
+		CB1C6E851D2AA6860090C57B /* JSONKeyMapper_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper_Ting.h; sourceTree = "<group>"; };
+		CB1C6E861D2AA6860090C57B /* JSONModel_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel_Ting.h; sourceTree = "<group>"; };
+		CB1C6E871D2AA6860090C57B /* JSONModelArray_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray_Ting.h; sourceTree = "<group>"; };
+		CB1C6E881D2AA6860090C57B /* JSONModelError_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError_Ting.h; sourceTree = "<group>"; };
+		CB1C6E891D2AA6860090C57B /* JSONValueTransformer_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer_Ting.h; sourceTree = "<group>"; };
+		CB1C6E8A1D2AA6860090C57B /* MainRecDefaultModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRecDefaultModels.h; sourceTree = "<group>"; };
+		CB1C6E8B1D2AA6860090C57B /* MusicAPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayer.h; sourceTree = "<group>"; };
+		CB1C6E8C1D2AA6860090C57B /* MusicAPlayerDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayerDefs.h; sourceTree = "<group>"; };
+		CB1C6E8D1D2AA6860090C57B /* MusicAPlayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayerDelegate.h; sourceTree = "<group>"; };
+		CB1C6E8E1D2AA6860090C57B /* PlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayItem.h; sourceTree = "<group>"; };
+		CB1C6E8F1D2AA6860090C57B /* PlayStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayStrategy.h; sourceTree = "<group>"; };
+		CB1C6E901D2AA6860090C57B /* SceneBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBaseModel.h; sourceTree = "<group>"; };
+		CB1C6E911D2AA6860090C57B /* SearchModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModels.h; sourceTree = "<group>"; };
+		CB1C6E921D2AA6860090C57B /* TingApiDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingApiDataRequest.h; sourceTree = "<group>"; };
+		CB1C6E931D2AA6860090C57B /* TingApiDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingApiDefine.h; sourceTree = "<group>"; };
+		CB1C6E941D2AA6860090C57B /* TingSDKGlobalUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKGlobalUtility.h; sourceTree = "<group>"; };
+		CB1C6E951D2AA6860090C57B /* TingSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKManager.h; sourceTree = "<group>"; };
+		CB1C6E961D2AA6860090C57B /* TingSDKPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKPathManager.h; sourceTree = "<group>"; };
+		CB1C6E971D2AA6860090C57B /* libTingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTingSDK.a; sourceTree = "<group>"; };
+		CB1C6E991D2AA6860090C57B /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
+		CB1C6E9C1D2AA8050090C57B /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		CB1C6E9E1D2AA80F0090C57B /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		CB1C6EA01D2AA81F0090C57B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CB1C6EA21D2AA8240090C57B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CB1C6EA41D2AA82D0090C57B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CB1C6EA81D2AA83F0090C57B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +97,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1C6EAB1D2AA8470090C57B /* MediaPlayer.framework in Frameworks */,
+				CB1C6EA91D2AA83F0090C57B /* AVFoundation.framework in Frameworks */,
+				CB1C6EA71D2AA8360090C57B /* AudioToolbox.framework in Frameworks */,
+				CB1C6EA51D2AA82D0090C57B /* CoreMedia.framework in Frameworks */,
+				CB1C6EA31D2AA8240090C57B /* CoreFoundation.framework in Frameworks */,
+				CB1C6EA11D2AA81F0090C57B /* libz.tbd in Frameworks */,
+				CB1C6E9F1D2AA80F0090C57B /* libc++.1.tbd in Frameworks */,
+				CB1C6E9D1D2AA8050090C57B /* libstdc++.6.0.9.tbd in Frameworks */,
+				CB1C6E9A1D2AA6860090C57B /* libTingSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +129,7 @@
 		CB1932641D2A9D78000F0916 = {
 			isa = PBXGroup;
 			children = (
+				CB1C6EAC1D2AA8510090C57B /* Framework */,
 				CB19326F1D2A9D78000F0916 /* BaiduMusicDemo */,
 				CB1932891D2A9D78000F0916 /* BaiduMusicDemoTests */,
 				CB1932941D2A9D78000F0916 /* BaiduMusicDemoUITests */,
@@ -101,6 +150,7 @@
 		CB19326F1D2A9D78000F0916 /* BaiduMusicDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CB1C6E821D2AA6860090C57B /* TingSDK */,
 				CB1932731D2A9D78000F0916 /* AppDelegate.h */,
 				CB1932741D2A9D78000F0916 /* AppDelegate.m */,
 				CB1932761D2A9D78000F0916 /* ViewController.h */,
@@ -138,6 +188,65 @@
 				CB1932971D2A9D78000F0916 /* Info.plist */,
 			);
 			path = BaiduMusicDemoUITests;
+			sourceTree = "<group>";
+		};
+		CB1C6E821D2AA6860090C57B /* TingSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CB1C6E831D2AA6860090C57B /* include */,
+				CB1C6E971D2AA6860090C57B /* libTingSDK.a */,
+				CB1C6E981D2AA6860090C57B /* Resources */,
+			);
+			path = TingSDK;
+			sourceTree = "<group>";
+		};
+		CB1C6E831D2AA6860090C57B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CB1C6E841D2AA6860090C57B /* APlayerDefs.h */,
+				CB1C6E851D2AA6860090C57B /* JSONKeyMapper_Ting.h */,
+				CB1C6E861D2AA6860090C57B /* JSONModel_Ting.h */,
+				CB1C6E871D2AA6860090C57B /* JSONModelArray_Ting.h */,
+				CB1C6E881D2AA6860090C57B /* JSONModelError_Ting.h */,
+				CB1C6E891D2AA6860090C57B /* JSONValueTransformer_Ting.h */,
+				CB1C6E8A1D2AA6860090C57B /* MainRecDefaultModels.h */,
+				CB1C6E8B1D2AA6860090C57B /* MusicAPlayer.h */,
+				CB1C6E8C1D2AA6860090C57B /* MusicAPlayerDefs.h */,
+				CB1C6E8D1D2AA6860090C57B /* MusicAPlayerDelegate.h */,
+				CB1C6E8E1D2AA6860090C57B /* PlayItem.h */,
+				CB1C6E8F1D2AA6860090C57B /* PlayStrategy.h */,
+				CB1C6E901D2AA6860090C57B /* SceneBaseModel.h */,
+				CB1C6E911D2AA6860090C57B /* SearchModels.h */,
+				CB1C6E921D2AA6860090C57B /* TingApiDataRequest.h */,
+				CB1C6E931D2AA6860090C57B /* TingApiDefine.h */,
+				CB1C6E941D2AA6860090C57B /* TingSDKGlobalUtility.h */,
+				CB1C6E951D2AA6860090C57B /* TingSDKManager.h */,
+				CB1C6E961D2AA6860090C57B /* TingSDKPathManager.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		CB1C6E981D2AA6860090C57B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB1C6E991D2AA6860090C57B /* ic_close.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB1C6EAC1D2AA8510090C57B /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */,
+				CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */,
+				CB1C6EA41D2AA82D0090C57B /* CoreMedia.framework */,
+				CB1C6EA21D2AA8240090C57B /* CoreFoundation.framework */,
+				CB1C6EA01D2AA81F0090C57B /* libz.tbd */,
+				CB1C6E9E1D2AA80F0090C57B /* libc++.1.tbd */,
+				CB1C6E9C1D2AA8050090C57B /* libstdc++.6.0.9.tbd */,
+				CB1C6EA81D2AA83F0090C57B /* AVFoundation.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1C6E9B1D2AA6860090C57B /* ic_close.png in Resources */,
 				CB1932801D2A9D78000F0916 /* LaunchScreen.storyboard in Resources */,
 				CB19327D1D2A9D78000F0916 /* Assets.xcassets in Resources */,
 				CB19327B1D2A9D78000F0916 /* Main.storyboard in Resources */,
@@ -415,6 +525,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaiduMusicDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiduMusicDemo/TingSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Karl.BaiduMusicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -426,6 +540,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaiduMusicDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BaiduMusicDemo/TingSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Karl.BaiduMusicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,6 +614,7 @@
 				CB19329C1D2A9D78000F0916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB19329D1D2A9D78000F0916 /* Build configuration list for PBXNativeTarget "BaiduMusicDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +623,7 @@
 				CB19329F1D2A9D78000F0916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB1932A01D2A9D78000F0916 /* Build configuration list for PBXNativeTarget "BaiduMusicDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +632,7 @@
 				CB1932A21D2A9D78000F0916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

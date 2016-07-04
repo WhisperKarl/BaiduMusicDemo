@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "TingSDKManager.h"
+
+#define API_KEY    @"H7THeqTNzDcUOpNuvs0gXGIL"
+#define SECRET_KEY @"KCzK1bvf7yAmzNbMsPTwcw7uNaqmGBox"
+#define SCOPE      @"music_media_basic,music_musicdata_basic,music_search_basic"
 
 @interface AppDelegate ()
 
@@ -17,6 +22,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    __block BOOL authorFinished = NO;
+
+    [[TingSDKManager sharedInstance] configuration:API_KEY appSecret:SECRET_KEY scope:SCOPE];
+    [[TingSDKManager sharedInstance] authorize:^(int status) {
+        authorFinished = YES;
+    }];
+    
+    while (!authorFinished) {
+        [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+    }
     return YES;
 }
 
