@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  SongListCell.h
 //  BaiduMusicDemo
 //
-//  Created by Life's a struggle on 16/7/4.
+//  Created by Karl on 16/7/5.
 //  Copyright © 2016年 Karl. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SongListCell : UITableViewCell
 
 @end
-

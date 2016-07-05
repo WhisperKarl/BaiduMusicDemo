@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB1932721D2A9D78000F0916 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1932711D2A9D78000F0916 /* main.m */; };
 		CB1932751D2A9D78000F0916 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1932741D2A9D78000F0916 /* AppDelegate.m */; };
-		CB1932781D2A9D78000F0916 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1932771D2A9D78000F0916 /* ViewController.m */; };
-		CB19327B1D2A9D78000F0916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1932791D2A9D78000F0916 /* Main.storyboard */; };
 		CB19327D1D2A9D78000F0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB19327C1D2A9D78000F0916 /* Assets.xcassets */; };
-		CB1932801D2A9D78000F0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB19327E1D2A9D78000F0916 /* LaunchScreen.storyboard */; };
 		CB19328B1D2A9D78000F0916 /* BaiduMusicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB19328A1D2A9D78000F0916 /* BaiduMusicDemoTests.m */; };
 		CB1932961D2A9D78000F0916 /* BaiduMusicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1932951D2A9D78000F0916 /* BaiduMusicDemoUITests.m */; };
 		CB1C6E9A1D2AA6860090C57B /* libTingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6E971D2AA6860090C57B /* libTingSDK.a */; };
@@ -25,6 +22,11 @@
 		CB1C6EA71D2AA8360090C57B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */; };
 		CB1C6EA91D2AA83F0090C57B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA81D2AA83F0090C57B /* AVFoundation.framework */; };
 		CB1C6EAB1D2AA8470090C57B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */; };
+		CB41C2511D2B968900C8659E /* SongsListController+CreateSongList.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */; };
+		CB41C2591D2BBF6A00C8659E /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2581D2BBF6A00C8659E /* SongListCell.m */; };
+		CB41C25D1D2BBFD900C8659E /* SongListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB41C25C1D2BBFD900C8659E /* SongListCell.xib */; };
+		CBDCEF431D2B51D7006C45F0 /* SongsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDCEF421D2B51D7006C45F0 /* SongsListController.m */; };
+		CBDCEF451D2B56B2006C45F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDCEF441D2B56B2006C45F0 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +51,7 @@
 		CB1932711D2A9D78000F0916 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB1932731D2A9D78000F0916 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB1932741D2A9D78000F0916 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CB1932761D2A9D78000F0916 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CB1932771D2A9D78000F0916 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CB19327A1D2A9D78000F0916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB19327C1D2A9D78000F0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CB19327F1D2A9D78000F0916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB1932811D2A9D78000F0916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB1932861D2A9D78000F0916 /* BaiduMusicDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiduMusicDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB19328A1D2A9D78000F0916 /* BaiduMusicDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMusicDemoTests.m; sourceTree = "<group>"; };
@@ -90,6 +88,15 @@
 		CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CB1C6EA81D2AA83F0090C57B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CB41C24E1D2B63A100C8659E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CB41C24F1D2B968900C8659E /* SongsListController+CreateSongList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SongsListController+CreateSongList.h"; sourceTree = "<group>"; };
+		CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SongsListController+CreateSongList.m"; sourceTree = "<group>"; };
+		CB41C2571D2BBF6A00C8659E /* SongListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListCell.h; sourceTree = "<group>"; };
+		CB41C2581D2BBF6A00C8659E /* SongListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListCell.m; sourceTree = "<group>"; };
+		CB41C25C1D2BBFD900C8659E /* SongListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongListCell.xib; sourceTree = "<group>"; };
+		CBDCEF411D2B51D7006C45F0 /* SongsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsListController.h; sourceTree = "<group>"; };
+		CBDCEF421D2B51D7006C45F0 /* SongsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsListController.m; sourceTree = "<group>"; };
+		CBDCEF441D2B56B2006C45F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDCEF451D2B56B2006C45F0 /* UIKit.framework in Frameworks */,
 				CB1C6EAB1D2AA8470090C57B /* MediaPlayer.framework in Frameworks */,
 				CB1C6EA91D2AA83F0090C57B /* AVFoundation.framework in Frameworks */,
 				CB1C6EA71D2AA8360090C57B /* AudioToolbox.framework in Frameworks */,
@@ -153,11 +161,14 @@
 				CB1C6E821D2AA6860090C57B /* TingSDK */,
 				CB1932731D2A9D78000F0916 /* AppDelegate.h */,
 				CB1932741D2A9D78000F0916 /* AppDelegate.m */,
-				CB1932761D2A9D78000F0916 /* ViewController.h */,
-				CB1932771D2A9D78000F0916 /* ViewController.m */,
-				CB1932791D2A9D78000F0916 /* Main.storyboard */,
+				CBDCEF411D2B51D7006C45F0 /* SongsListController.h */,
+				CBDCEF421D2B51D7006C45F0 /* SongsListController.m */,
+				CB41C24F1D2B968900C8659E /* SongsListController+CreateSongList.h */,
+				CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */,
+				CB41C2571D2BBF6A00C8659E /* SongListCell.h */,
+				CB41C2581D2BBF6A00C8659E /* SongListCell.m */,
+				CB41C25C1D2BBFD900C8659E /* SongListCell.xib */,
 				CB19327C1D2A9D78000F0916 /* Assets.xcassets */,
-				CB19327E1D2A9D78000F0916 /* LaunchScreen.storyboard */,
 				CB1932811D2A9D78000F0916 /* Info.plist */,
 				CB1932701D2A9D78000F0916 /* Supporting Files */,
 			);
@@ -168,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				CB1932711D2A9D78000F0916 /* main.m */,
+				CB41C24E1D2B63A100C8659E /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -237,6 +249,7 @@
 		CB1C6EAC1D2AA8510090C57B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CBDCEF441D2B56B2006C45F0 /* UIKit.framework */,
 				CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */,
 				CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */,
 				CB1C6EA41D2AA82D0090C57B /* CoreMedia.framework */,
@@ -352,10 +365,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB41C25D1D2BBFD900C8659E /* SongListCell.xib in Resources */,
 				CB1C6E9B1D2AA6860090C57B /* ic_close.png in Resources */,
-				CB1932801D2A9D78000F0916 /* LaunchScreen.storyboard in Resources */,
 				CB19327D1D2A9D78000F0916 /* Assets.xcassets in Resources */,
-				CB19327B1D2A9D78000F0916 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +392,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1932781D2A9D78000F0916 /* ViewController.m in Sources */,
+				CB41C2591D2BBF6A00C8659E /* SongListCell.m in Sources */,
 				CB1932751D2A9D78000F0916 /* AppDelegate.m in Sources */,
+				CBDCEF431D2B51D7006C45F0 /* SongsListController.m in Sources */,
 				CB1932721D2A9D78000F0916 /* main.m in Sources */,
+				CB41C2511D2B968900C8659E /* SongsListController+CreateSongList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,25 +430,6 @@
 			targetProxy = CB1932921D2A9D78000F0916 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CB1932791D2A9D78000F0916 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB19327A1D2A9D78000F0916 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CB19327E1D2A9D78000F0916 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB19327F1D2A9D78000F0916 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB1932981D2A9D78000F0916 /* Debug */ = {
@@ -523,12 +518,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduMusicDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = BaiduMusicDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaiduMusicDemo/TingSDK",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Karl.BaiduMusicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -538,12 +536,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduMusicDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = BaiduMusicDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaiduMusicDemo/TingSDK",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Karl.BaiduMusicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

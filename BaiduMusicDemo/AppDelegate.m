@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "TingSDKManager.h"
-
+#import "SongsListController.h"
+#import <CoreTelephony/CTCallCenter.h>
+#import <CoreTelephony/CTCall.h>
 #define API_KEY    @"H7THeqTNzDcUOpNuvs0gXGIL"
 #define SECRET_KEY @"KCzK1bvf7yAmzNbMsPTwcw7uNaqmGBox"
 #define SCOPE      @"music_media_basic,music_musicdata_basic,music_search_basic"
@@ -32,6 +34,28 @@
     while (!authorFinished) {
         [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
     }
+    
+    CTCallCenter *center = [[CTCallCenter alloc] init];
+    center.callEventHandler = ^(CTCall *call){
+    
+        if (call.callState == CTCallStateDialing || call.callState == CTCallStateConnected) {
+            NSLog(@"暂停播放");
+        }
+        
+        if (call.callState == CTCallStateDisconnected) {
+            NSLog(@"恢复播放");
+        }
+    
+    
+    };
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    SongsListController *list = [[SongsListController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:list];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
