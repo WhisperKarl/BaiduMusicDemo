@@ -10,5 +10,7 @@
 
 @interface PlayDetailController : UIViewController
 
+@property (nonatomic, strong) NSDictionary *infoDic;
 
+@property (nonatomic, strong) NSArray *listArray;
 @end

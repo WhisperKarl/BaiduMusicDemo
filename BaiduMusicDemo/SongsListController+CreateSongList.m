@@ -113,7 +113,14 @@ static const void *ListArrayKey = &ListArrayKey;
     
     [[MusicAPlayer sharedInstance] playAtIndex:indexPath.row];
     
+    NSDictionary *dic = [[self.listArray objectAtIndex:tableView.tag - tableviewTag] objectAtIndex:indexPath.row];
+//    cell.textLabel.text = dic[@"title"];
+//    cell.detailTextLabel.text = dic[@"author"];
     PlayDetailController *vc = [[PlayDetailController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    vc.infoDic = dic;
+    vc.listArray = response;
+    [self presentViewController:vc animated:YES completion:^{
+       
+    }];
 }
 @end
