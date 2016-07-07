@@ -83,6 +83,10 @@
     
     [self createSongsListView];
     
+    
+    SceneBaseModel *base = [_models.scene_info objectAtIndex:0];
+    [self fetchListDataWithSceneID:base.scene_id tag:0];
+    
 }
 
 #pragma mark -- 选择按钮点击事件
@@ -118,16 +122,34 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
     if ([scrollView isKindOfClass:[UITableView class]]) {
-        NSLog(@"tableview");
+        
     }else{
         
         
     }
 }
 
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
+    if ([scrollView isKindOfClass:[UITableView class]]) {
+        
+    } else if([scrollView isKindOfClass:[_mainScrollView class]]) {
+        
+        NSInteger page = scrollView.contentOffset.x / SCREEN_WIDTH;
+        UIButton *btn = (UIButton *)[self.view viewWithTag:page + titleButtonTag];
+        SceneBaseModel *base = [_models.scene_info objectAtIndex:page];
+        [self fetchListDataWithSceneID:base.scene_id tag:page];
+        [self TitleBtnAction:btn];
+        
+    }
+
+}
+
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     
-    if ([scrollView isKindOfClass:[_mainScrollView class]]) {
+    if ([scrollView isKindOfClass:[UITableView class]]) {
+        
+    }else if ([scrollView isKindOfClass:[_mainScrollView class]]) {
         
         NSInteger page = scrollView.contentOffset.x / SCREEN_WIDTH;
         UIButton *btn = (UIButton *)[self.view viewWithTag:page + titleButtonTag];

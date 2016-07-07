@@ -10,4 +10,13 @@
 
 @interface SongListCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *bigImage;
+
+@property (weak, nonatomic) IBOutlet UILabel *songName;
+
+@property (weak, nonatomic) IBOutlet UILabel *singerName;
+
+@property (weak, nonatomic) IBOutlet UILabel *songLength;
+
+
 @end

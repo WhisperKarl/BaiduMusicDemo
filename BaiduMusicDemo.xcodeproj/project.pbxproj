@@ -25,6 +25,8 @@
 		CB41C2511D2B968900C8659E /* SongsListController+CreateSongList.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */; };
 		CB41C2591D2BBF6A00C8659E /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2581D2BBF6A00C8659E /* SongListCell.m */; };
 		CB41C25D1D2BBFD900C8659E /* SongListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB41C25C1D2BBFD900C8659E /* SongListCell.xib */; };
+		CB41C2901D2CF4A100C8659E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB41C28F1D2CF4A100C8659E /* SystemConfiguration.framework */; };
+		CB41C2931D2CF59800C8659E /* PlayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2921D2CF59800C8659E /* PlayDetailController.m */; };
 		CBDCEF431D2B51D7006C45F0 /* SongsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDCEF421D2B51D7006C45F0 /* SongsListController.m */; };
 		CBDCEF451D2B56B2006C45F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDCEF441D2B56B2006C45F0 /* UIKit.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,9 @@
 		CB41C2571D2BBF6A00C8659E /* SongListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListCell.h; sourceTree = "<group>"; };
 		CB41C2581D2BBF6A00C8659E /* SongListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListCell.m; sourceTree = "<group>"; };
 		CB41C25C1D2BBFD900C8659E /* SongListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongListCell.xib; sourceTree = "<group>"; };
+		CB41C28F1D2CF4A100C8659E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CB41C2911D2CF59800C8659E /* PlayDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayDetailController.h; sourceTree = "<group>"; };
+		CB41C2921D2CF59800C8659E /* PlayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayDetailController.m; sourceTree = "<group>"; };
 		CBDCEF411D2B51D7006C45F0 /* SongsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsListController.h; sourceTree = "<group>"; };
 		CBDCEF421D2B51D7006C45F0 /* SongsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsListController.m; sourceTree = "<group>"; };
 		CBDCEF441D2B56B2006C45F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -104,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB41C2901D2CF4A100C8659E /* SystemConfiguration.framework in Frameworks */,
 				CBDCEF451D2B56B2006C45F0 /* UIKit.framework in Frameworks */,
 				CB1C6EAB1D2AA8470090C57B /* MediaPlayer.framework in Frameworks */,
 				CB1C6EA91D2AA83F0090C57B /* AVFoundation.framework in Frameworks */,
@@ -165,6 +171,8 @@
 				CBDCEF421D2B51D7006C45F0 /* SongsListController.m */,
 				CB41C24F1D2B968900C8659E /* SongsListController+CreateSongList.h */,
 				CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */,
+				CB41C2911D2CF59800C8659E /* PlayDetailController.h */,
+				CB41C2921D2CF59800C8659E /* PlayDetailController.m */,
 				CB41C2571D2BBF6A00C8659E /* SongListCell.h */,
 				CB41C2581D2BBF6A00C8659E /* SongListCell.m */,
 				CB41C25C1D2BBFD900C8659E /* SongListCell.xib */,
@@ -249,6 +257,7 @@
 		CB1C6EAC1D2AA8510090C57B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CB41C28F1D2CF4A100C8659E /* SystemConfiguration.framework */,
 				CBDCEF441D2B56B2006C45F0 /* UIKit.framework */,
 				CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */,
 				CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */,
@@ -329,6 +338,11 @@
 				TargetAttributes = {
 					CB19326C1D2A9D78000F0916 = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					CB1932851D2A9D78000F0916 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -392,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB41C2931D2CF59800C8659E /* PlayDetailController.m in Sources */,
 				CB41C2591D2BBF6A00C8659E /* SongListCell.m in Sources */,
 				CB1932751D2A9D78000F0916 /* AppDelegate.m in Sources */,
 				CBDCEF431D2B51D7006C45F0 /* SongsListController.m in Sources */,
@@ -518,6 +533,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduMusicDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = BaiduMusicDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -536,6 +553,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduMusicDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = BaiduMusicDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
