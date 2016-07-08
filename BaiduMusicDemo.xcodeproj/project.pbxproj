@@ -22,9 +22,9 @@
 		CB1C6EA71D2AA8360090C57B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */; };
 		CB1C6EA91D2AA83F0090C57B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA81D2AA83F0090C57B /* AVFoundation.framework */; };
 		CB1C6EAB1D2AA8470090C57B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */; };
+		CB3B63F01D2F743600A3B64A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3B63EF1D2F743600A3B64A /* BaseViewController.m */; };
+		CB3B63F31D2F748A00A3B64A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3B63F21D2F748A00A3B64A /* Reachability.m */; };
 		CB41C2511D2B968900C8659E /* SongsListController+CreateSongList.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */; };
-		CB41C2591D2BBF6A00C8659E /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2581D2BBF6A00C8659E /* SongListCell.m */; };
-		CB41C25D1D2BBFD900C8659E /* SongListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB41C25C1D2BBFD900C8659E /* SongListCell.xib */; };
 		CB41C2901D2CF4A100C8659E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB41C28F1D2CF4A100C8659E /* SystemConfiguration.framework */; };
 		CB41C2931D2CF59800C8659E /* PlayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2921D2CF59800C8659E /* PlayDetailController.m */; };
 		CBA48A1F1D2DE84E00FCBAAC /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CBA48A031D2DE84E00FCBAAC /* LICENSE */; };
@@ -118,12 +118,13 @@
 		CB1C6EA61D2AA8360090C57B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CB1C6EA81D2AA83F0090C57B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CB1C6EAA1D2AA8470090C57B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CB3B63EE1D2F743600A3B64A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CB3B63EF1D2F743600A3B64A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CB3B63F11D2F748A00A3B64A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CB3B63F21D2F748A00A3B64A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CB41C24E1D2B63A100C8659E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CB41C24F1D2B968900C8659E /* SongsListController+CreateSongList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SongsListController+CreateSongList.h"; sourceTree = "<group>"; };
 		CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SongsListController+CreateSongList.m"; sourceTree = "<group>"; };
-		CB41C2571D2BBF6A00C8659E /* SongListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListCell.h; sourceTree = "<group>"; };
-		CB41C2581D2BBF6A00C8659E /* SongListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListCell.m; sourceTree = "<group>"; };
-		CB41C25C1D2BBFD900C8659E /* SongListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongListCell.xib; sourceTree = "<group>"; };
 		CB41C28F1D2CF4A100C8659E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CB41C2911D2CF59800C8659E /* PlayDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayDetailController.h; sourceTree = "<group>"; };
 		CB41C2921D2CF59800C8659E /* PlayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayDetailController.m; sourceTree = "<group>"; };
@@ -250,20 +251,13 @@
 		CB19326F1D2A9D78000F0916 /* BaiduMusicDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CBA48A2B1D2E016F00FCBAAC /* SDWebImage */,
-				CBA48A021D2DE84E00FCBAAC /* Masonry */,
-				CB1C6E821D2AA6860090C57B /* TingSDK */,
+				CB3B63EE1D2F743600A3B64A /* BaseViewController.h */,
+				CB3B63EF1D2F743600A3B64A /* BaseViewController.m */,
 				CB1932731D2A9D78000F0916 /* AppDelegate.h */,
 				CB1932741D2A9D78000F0916 /* AppDelegate.m */,
-				CBDCEF411D2B51D7006C45F0 /* SongsListController.h */,
-				CBDCEF421D2B51D7006C45F0 /* SongsListController.m */,
-				CB41C24F1D2B968900C8659E /* SongsListController+CreateSongList.h */,
-				CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */,
-				CB41C2911D2CF59800C8659E /* PlayDetailController.h */,
-				CB41C2921D2CF59800C8659E /* PlayDetailController.m */,
-				CB41C2571D2BBF6A00C8659E /* SongListCell.h */,
-				CB41C2581D2BBF6A00C8659E /* SongListCell.m */,
-				CB41C25C1D2BBFD900C8659E /* SongListCell.xib */,
+				CB3B63EC1D2F4C0600A3B64A /* PlayDetail */,
+				CB3B63EB1D2F4BFA00A3B64A /* SongList */,
+				CB3B63EA1D2F4BCA00A3B64A /* TirdPart */,
 				CB19327C1D2A9D78000F0916 /* Assets.xcassets */,
 				CB1932811D2A9D78000F0916 /* Info.plist */,
 				CB1932701D2A9D78000F0916 /* Supporting Files */,
@@ -357,6 +351,46 @@
 				CB1C6EA81D2AA83F0090C57B /* AVFoundation.framework */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		CB3B63EA1D2F4BCA00A3B64A /* TirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				CB3B63F11D2F748A00A3B64A /* Reachability.h */,
+				CB3B63F21D2F748A00A3B64A /* Reachability.m */,
+				CBA48A2B1D2E016F00FCBAAC /* SDWebImage */,
+				CBA48A021D2DE84E00FCBAAC /* Masonry */,
+				CB1C6E821D2AA6860090C57B /* TingSDK */,
+			);
+			name = TirdPart;
+			sourceTree = "<group>";
+		};
+		CB3B63EB1D2F4BFA00A3B64A /* SongList */ = {
+			isa = PBXGroup;
+			children = (
+				CB3B63ED1D2F4C1000A3B64A /* Controller */,
+			);
+			name = SongList;
+			sourceTree = "<group>";
+		};
+		CB3B63EC1D2F4C0600A3B64A /* PlayDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CB41C2911D2CF59800C8659E /* PlayDetailController.h */,
+				CB41C2921D2CF59800C8659E /* PlayDetailController.m */,
+			);
+			name = PlayDetail;
+			sourceTree = "<group>";
+		};
+		CB3B63ED1D2F4C1000A3B64A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBDCEF411D2B51D7006C45F0 /* SongsListController.h */,
+				CBDCEF421D2B51D7006C45F0 /* SongsListController.m */,
+				CB41C24F1D2B968900C8659E /* SongsListController+CreateSongList.h */,
+				CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		CBA48A021D2DE84E00FCBAAC /* Masonry */ = {
@@ -556,7 +590,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB41C25D1D2BBFD900C8659E /* SongListCell.xib in Resources */,
 				CB1C6E9B1D2AA6860090C57B /* ic_close.png in Resources */,
 				CBA48A1F1D2DE84E00FCBAAC /* LICENSE in Resources */,
 				CB19327D1D2A9D78000F0916 /* Assets.xcassets in Resources */,
@@ -594,9 +627,9 @@
 				CBA48A581D2E016F00FCBAAC /* UIImage+MultiFormat.m in Sources */,
 				CB41C2931D2CF59800C8659E /* PlayDetailController.m in Sources */,
 				CBA48A251D2DE84E00FCBAAC /* MASViewConstraint.m in Sources */,
+				CB3B63F01D2F743600A3B64A /* BaseViewController.m in Sources */,
 				CBA48A4D1D2E016F00FCBAAC /* README.md in Sources */,
 				CBA48A231D2DE84E00FCBAAC /* MASLayoutConstraint.m in Sources */,
-				CB41C2591D2BBF6A00C8659E /* SongListCell.m in Sources */,
 				CB1932751D2A9D78000F0916 /* AppDelegate.m in Sources */,
 				CBA48A281D2DE84E00FCBAAC /* View+MASAdditions.m in Sources */,
 				CBA48A5A1D2E016F00FCBAAC /* UIImageView+WebCache.m in Sources */,
@@ -610,6 +643,7 @@
 				CBA48A511D2E016F00FCBAAC /* SDWebImageDecoder.m in Sources */,
 				CBA48A531D2E016F00FCBAAC /* SDWebImageDownloaderOperation.m in Sources */,
 				CBDCEF431D2B51D7006C45F0 /* SongsListController.m in Sources */,
+				CB3B63F31D2F748A00A3B64A /* Reachability.m in Sources */,
 				CB1932721D2A9D78000F0916 /* main.m in Sources */,
 				CB41C2511D2B968900C8659E /* SongsListController+CreateSongList.m in Sources */,
 				CBA48A501D2E016F00FCBAAC /* SDWebImageCompat.m in Sources */,

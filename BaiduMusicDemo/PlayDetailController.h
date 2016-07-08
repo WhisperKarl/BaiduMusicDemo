@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface PlayDetailController : UIViewController
+#import "BaseViewController.h"
+@interface PlayDetailController : BaseViewController
 
 @property (nonatomic, strong) NSDictionary *infoDic;
 

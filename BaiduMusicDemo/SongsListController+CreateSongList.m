@@ -7,7 +7,6 @@
 //
 
 #import "SongsListController+CreateSongList.h"
-#import "SongListCell.h"
 #import "MusicAPlayer.h"
 #import "PlayStrategy.h"
 #import "PlayDetailController.h"
@@ -114,8 +113,6 @@ static const void *ListArrayKey = &ListArrayKey;
     [[MusicAPlayer sharedInstance] playAtIndex:indexPath.row];
     
     NSDictionary *dic = [[self.listArray objectAtIndex:tableView.tag - tableviewTag] objectAtIndex:indexPath.row];
-//    cell.textLabel.text = dic[@"title"];
-//    cell.detailTextLabel.text = dic[@"author"];
     PlayDetailController *vc = [[PlayDetailController alloc] init];
     vc.infoDic = dic;
     vc.listArray = response;

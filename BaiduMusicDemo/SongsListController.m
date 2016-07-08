@@ -23,10 +23,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
-    [self.navigationController.navigationBar setBarTintColor:Green_Color];
     self.title = @"歌曲列表";
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName]];
     [self prepareData];
 }
 - (void)prepareData{

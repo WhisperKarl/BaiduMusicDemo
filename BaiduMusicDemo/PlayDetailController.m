@@ -205,7 +205,6 @@
     
     static int direction = 1;
     
-//     CGPoint lastLocation = CGPointMake(0, 0);
     NSLog(@"喝喝");
     if (gesture.state == UIGestureRecognizerStateChanged) {
         if (direction == 1) {

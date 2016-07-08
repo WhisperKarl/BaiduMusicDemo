@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SongsListController : UIViewController
+#import "BaseViewController.h"
+@interface SongsListController : BaseViewController
 
 @property (nonatomic, strong) UIScrollView *mainScrollView;
 

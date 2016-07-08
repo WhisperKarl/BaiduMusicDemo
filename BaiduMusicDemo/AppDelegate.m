@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TingSDKManager.h"
 #import "SongsListController.h"
+#import "Reachability.h"
 #import <CoreTelephony/CTCallCenter.h>
 #import <CoreTelephony/CTCall.h>
 #define API_KEY    @"H7THeqTNzDcUOpNuvs0gXGIL"
@@ -34,20 +35,10 @@
     while (!authorFinished) {
         [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
     }
-    
-    CTCallCenter *center = [[CTCallCenter alloc] init];
-    center.callEventHandler = ^(CTCall *call){
-    
-        if (call.callState == CTCallStateDialing || call.callState == CTCallStateConnected) {
-            NSLog(@"暂停播放");
-        }
-        
-        if (call.callState == CTCallStateDisconnected) {
-            NSLog(@"恢复播放");
-        }
-    
-    
-    };
+
+    //网络状态监测
+    Reachability *reachAbility = [Reachability reachabilityWithHostName:@"www.baidu.com"];
+    [reachAbility stopNotifier];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
