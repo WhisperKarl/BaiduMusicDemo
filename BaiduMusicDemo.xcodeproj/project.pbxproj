@@ -12,8 +12,6 @@
 		CB19327D1D2A9D78000F0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB19327C1D2A9D78000F0916 /* Assets.xcassets */; };
 		CB19328B1D2A9D78000F0916 /* BaiduMusicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB19328A1D2A9D78000F0916 /* BaiduMusicDemoTests.m */; };
 		CB1932961D2A9D78000F0916 /* BaiduMusicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1932951D2A9D78000F0916 /* BaiduMusicDemoUITests.m */; };
-		CB1C6E9A1D2AA6860090C57B /* libTingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6E971D2AA6860090C57B /* libTingSDK.a */; };
-		CB1C6E9B1D2AA6860090C57B /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = CB1C6E991D2AA6860090C57B /* ic_close.png */; };
 		CB1C6E9D1D2AA8050090C57B /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6E9C1D2AA8050090C57B /* libstdc++.6.0.9.tbd */; };
 		CB1C6E9F1D2AA80F0090C57B /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6E9E1D2AA80F0090C57B /* libc++.1.tbd */; };
 		CB1C6EA11D2AA81F0090C57B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1C6EA01D2AA81F0090C57B /* libz.tbd */; };
@@ -27,6 +25,8 @@
 		CB41C2511D2B968900C8659E /* SongsListController+CreateSongList.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */; };
 		CB41C2901D2CF4A100C8659E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB41C28F1D2CF4A100C8659E /* SystemConfiguration.framework */; };
 		CB41C2931D2CF59800C8659E /* PlayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41C2921D2CF59800C8659E /* PlayDetailController.m */; };
+		CB7A94A11D2F83D1006B93D9 /* libTingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7A949E1D2F83D1006B93D9 /* libTingSDK.a */; };
+		CB7A94A21D2F83D1006B93D9 /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7A94A01D2F83D1006B93D9 /* ic_close.png */; };
 		CBA48A1F1D2DE84E00FCBAAC /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CBA48A031D2DE84E00FCBAAC /* LICENSE */; };
 		CBA48A201D2DE84E00FCBAAC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA48A061D2DE84E00FCBAAC /* MASCompositeConstraint.m */; };
 		CBA48A211D2DE84E00FCBAAC /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA48A091D2DE84E00FCBAAC /* MASConstraint.m */; };
@@ -89,27 +89,6 @@
 		CB1932911D2A9D78000F0916 /* BaiduMusicDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiduMusicDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1932951D2A9D78000F0916 /* BaiduMusicDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMusicDemoUITests.m; sourceTree = "<group>"; };
 		CB1932971D2A9D78000F0916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB1C6E841D2AA6860090C57B /* APlayerDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APlayerDefs.h; sourceTree = "<group>"; };
-		CB1C6E851D2AA6860090C57B /* JSONKeyMapper_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper_Ting.h; sourceTree = "<group>"; };
-		CB1C6E861D2AA6860090C57B /* JSONModel_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel_Ting.h; sourceTree = "<group>"; };
-		CB1C6E871D2AA6860090C57B /* JSONModelArray_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray_Ting.h; sourceTree = "<group>"; };
-		CB1C6E881D2AA6860090C57B /* JSONModelError_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError_Ting.h; sourceTree = "<group>"; };
-		CB1C6E891D2AA6860090C57B /* JSONValueTransformer_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer_Ting.h; sourceTree = "<group>"; };
-		CB1C6E8A1D2AA6860090C57B /* MainRecDefaultModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRecDefaultModels.h; sourceTree = "<group>"; };
-		CB1C6E8B1D2AA6860090C57B /* MusicAPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayer.h; sourceTree = "<group>"; };
-		CB1C6E8C1D2AA6860090C57B /* MusicAPlayerDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayerDefs.h; sourceTree = "<group>"; };
-		CB1C6E8D1D2AA6860090C57B /* MusicAPlayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayerDelegate.h; sourceTree = "<group>"; };
-		CB1C6E8E1D2AA6860090C57B /* PlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayItem.h; sourceTree = "<group>"; };
-		CB1C6E8F1D2AA6860090C57B /* PlayStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayStrategy.h; sourceTree = "<group>"; };
-		CB1C6E901D2AA6860090C57B /* SceneBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBaseModel.h; sourceTree = "<group>"; };
-		CB1C6E911D2AA6860090C57B /* SearchModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModels.h; sourceTree = "<group>"; };
-		CB1C6E921D2AA6860090C57B /* TingApiDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingApiDataRequest.h; sourceTree = "<group>"; };
-		CB1C6E931D2AA6860090C57B /* TingApiDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingApiDefine.h; sourceTree = "<group>"; };
-		CB1C6E941D2AA6860090C57B /* TingSDKGlobalUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKGlobalUtility.h; sourceTree = "<group>"; };
-		CB1C6E951D2AA6860090C57B /* TingSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKManager.h; sourceTree = "<group>"; };
-		CB1C6E961D2AA6860090C57B /* TingSDKPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKPathManager.h; sourceTree = "<group>"; };
-		CB1C6E971D2AA6860090C57B /* libTingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTingSDK.a; sourceTree = "<group>"; };
-		CB1C6E991D2AA6860090C57B /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
 		CB1C6E9C1D2AA8050090C57B /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		CB1C6E9E1D2AA80F0090C57B /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		CB1C6EA01D2AA81F0090C57B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -128,6 +107,27 @@
 		CB41C28F1D2CF4A100C8659E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CB41C2911D2CF59800C8659E /* PlayDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayDetailController.h; sourceTree = "<group>"; };
 		CB41C2921D2CF59800C8659E /* PlayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayDetailController.m; sourceTree = "<group>"; };
+		CB7A948B1D2F83D1006B93D9 /* APlayerDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APlayerDefs.h; sourceTree = "<group>"; };
+		CB7A948C1D2F83D1006B93D9 /* JSONKeyMapper_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper_Ting.h; sourceTree = "<group>"; };
+		CB7A948D1D2F83D1006B93D9 /* JSONModel_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel_Ting.h; sourceTree = "<group>"; };
+		CB7A948E1D2F83D1006B93D9 /* JSONModelArray_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray_Ting.h; sourceTree = "<group>"; };
+		CB7A948F1D2F83D1006B93D9 /* JSONModelError_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError_Ting.h; sourceTree = "<group>"; };
+		CB7A94901D2F83D1006B93D9 /* JSONValueTransformer_Ting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer_Ting.h; sourceTree = "<group>"; };
+		CB7A94911D2F83D1006B93D9 /* MainRecDefaultModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRecDefaultModels.h; sourceTree = "<group>"; };
+		CB7A94921D2F83D1006B93D9 /* MusicAPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayer.h; sourceTree = "<group>"; };
+		CB7A94931D2F83D1006B93D9 /* MusicAPlayerDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayerDefs.h; sourceTree = "<group>"; };
+		CB7A94941D2F83D1006B93D9 /* MusicAPlayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicAPlayerDelegate.h; sourceTree = "<group>"; };
+		CB7A94951D2F83D1006B93D9 /* PlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayItem.h; sourceTree = "<group>"; };
+		CB7A94961D2F83D1006B93D9 /* PlayStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayStrategy.h; sourceTree = "<group>"; };
+		CB7A94971D2F83D1006B93D9 /* SceneBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBaseModel.h; sourceTree = "<group>"; };
+		CB7A94981D2F83D1006B93D9 /* SearchModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModels.h; sourceTree = "<group>"; };
+		CB7A94991D2F83D1006B93D9 /* TingApiDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingApiDataRequest.h; sourceTree = "<group>"; };
+		CB7A949A1D2F83D1006B93D9 /* TingApiDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingApiDefine.h; sourceTree = "<group>"; };
+		CB7A949B1D2F83D1006B93D9 /* TingSDKGlobalUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKGlobalUtility.h; sourceTree = "<group>"; };
+		CB7A949C1D2F83D1006B93D9 /* TingSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKManager.h; sourceTree = "<group>"; };
+		CB7A949D1D2F83D1006B93D9 /* TingSDKPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TingSDKPathManager.h; sourceTree = "<group>"; };
+		CB7A949E1D2F83D1006B93D9 /* libTingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTingSDK.a; sourceTree = "<group>"; };
+		CB7A94A01D2F83D1006B93D9 /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
 		CBA48A031D2DE84E00FCBAAC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CBA48A051D2DE84E00FCBAAC /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CBA48A061D2DE84E00FCBAAC /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -196,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7A94A11D2F83D1006B93D9 /* libTingSDK.a in Frameworks */,
 				CB41C2901D2CF4A100C8659E /* SystemConfiguration.framework in Frameworks */,
 				CBDCEF451D2B56B2006C45F0 /* UIKit.framework in Frameworks */,
 				CB1C6EAB1D2AA8470090C57B /* MediaPlayer.framework in Frameworks */,
@@ -206,7 +207,6 @@
 				CB1C6EA11D2AA81F0090C57B /* libz.tbd in Frameworks */,
 				CB1C6E9F1D2AA80F0090C57B /* libc++.1.tbd in Frameworks */,
 				CB1C6E9D1D2AA8050090C57B /* libstdc++.6.0.9.tbd in Frameworks */,
-				CB1C6E9A1D2AA6860090C57B /* libTingSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,50 +292,6 @@
 			path = BaiduMusicDemoUITests;
 			sourceTree = "<group>";
 		};
-		CB1C6E821D2AA6860090C57B /* TingSDK */ = {
-			isa = PBXGroup;
-			children = (
-				CB1C6E831D2AA6860090C57B /* include */,
-				CB1C6E971D2AA6860090C57B /* libTingSDK.a */,
-				CB1C6E981D2AA6860090C57B /* Resources */,
-			);
-			path = TingSDK;
-			sourceTree = "<group>";
-		};
-		CB1C6E831D2AA6860090C57B /* include */ = {
-			isa = PBXGroup;
-			children = (
-				CB1C6E841D2AA6860090C57B /* APlayerDefs.h */,
-				CB1C6E851D2AA6860090C57B /* JSONKeyMapper_Ting.h */,
-				CB1C6E861D2AA6860090C57B /* JSONModel_Ting.h */,
-				CB1C6E871D2AA6860090C57B /* JSONModelArray_Ting.h */,
-				CB1C6E881D2AA6860090C57B /* JSONModelError_Ting.h */,
-				CB1C6E891D2AA6860090C57B /* JSONValueTransformer_Ting.h */,
-				CB1C6E8A1D2AA6860090C57B /* MainRecDefaultModels.h */,
-				CB1C6E8B1D2AA6860090C57B /* MusicAPlayer.h */,
-				CB1C6E8C1D2AA6860090C57B /* MusicAPlayerDefs.h */,
-				CB1C6E8D1D2AA6860090C57B /* MusicAPlayerDelegate.h */,
-				CB1C6E8E1D2AA6860090C57B /* PlayItem.h */,
-				CB1C6E8F1D2AA6860090C57B /* PlayStrategy.h */,
-				CB1C6E901D2AA6860090C57B /* SceneBaseModel.h */,
-				CB1C6E911D2AA6860090C57B /* SearchModels.h */,
-				CB1C6E921D2AA6860090C57B /* TingApiDataRequest.h */,
-				CB1C6E931D2AA6860090C57B /* TingApiDefine.h */,
-				CB1C6E941D2AA6860090C57B /* TingSDKGlobalUtility.h */,
-				CB1C6E951D2AA6860090C57B /* TingSDKManager.h */,
-				CB1C6E961D2AA6860090C57B /* TingSDKPathManager.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		CB1C6E981D2AA6860090C57B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CB1C6E991D2AA6860090C57B /* ic_close.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		CB1C6EAC1D2AA8510090C57B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,11 +312,11 @@
 		CB3B63EA1D2F4BCA00A3B64A /* TirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				CB7A94891D2F83D1006B93D9 /* TingSDK */,
 				CB3B63F11D2F748A00A3B64A /* Reachability.h */,
 				CB3B63F21D2F748A00A3B64A /* Reachability.m */,
 				CBA48A2B1D2E016F00FCBAAC /* SDWebImage */,
 				CBA48A021D2DE84E00FCBAAC /* Masonry */,
-				CB1C6E821D2AA6860090C57B /* TingSDK */,
 			);
 			name = TirdPart;
 			sourceTree = "<group>";
@@ -391,6 +347,50 @@
 				CB41C2501D2B968900C8659E /* SongsListController+CreateSongList.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		CB7A94891D2F83D1006B93D9 /* TingSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CB7A948A1D2F83D1006B93D9 /* include */,
+				CB7A949E1D2F83D1006B93D9 /* libTingSDK.a */,
+				CB7A949F1D2F83D1006B93D9 /* Resources */,
+			);
+			path = TingSDK;
+			sourceTree = "<group>";
+		};
+		CB7A948A1D2F83D1006B93D9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CB7A948B1D2F83D1006B93D9 /* APlayerDefs.h */,
+				CB7A948C1D2F83D1006B93D9 /* JSONKeyMapper_Ting.h */,
+				CB7A948D1D2F83D1006B93D9 /* JSONModel_Ting.h */,
+				CB7A948E1D2F83D1006B93D9 /* JSONModelArray_Ting.h */,
+				CB7A948F1D2F83D1006B93D9 /* JSONModelError_Ting.h */,
+				CB7A94901D2F83D1006B93D9 /* JSONValueTransformer_Ting.h */,
+				CB7A94911D2F83D1006B93D9 /* MainRecDefaultModels.h */,
+				CB7A94921D2F83D1006B93D9 /* MusicAPlayer.h */,
+				CB7A94931D2F83D1006B93D9 /* MusicAPlayerDefs.h */,
+				CB7A94941D2F83D1006B93D9 /* MusicAPlayerDelegate.h */,
+				CB7A94951D2F83D1006B93D9 /* PlayItem.h */,
+				CB7A94961D2F83D1006B93D9 /* PlayStrategy.h */,
+				CB7A94971D2F83D1006B93D9 /* SceneBaseModel.h */,
+				CB7A94981D2F83D1006B93D9 /* SearchModels.h */,
+				CB7A94991D2F83D1006B93D9 /* TingApiDataRequest.h */,
+				CB7A949A1D2F83D1006B93D9 /* TingApiDefine.h */,
+				CB7A949B1D2F83D1006B93D9 /* TingSDKGlobalUtility.h */,
+				CB7A949C1D2F83D1006B93D9 /* TingSDKManager.h */,
+				CB7A949D1D2F83D1006B93D9 /* TingSDKPathManager.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		CB7A949F1D2F83D1006B93D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB7A94A01D2F83D1006B93D9 /* ic_close.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CBA48A021D2DE84E00FCBAAC /* Masonry */ = {
@@ -590,7 +590,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1C6E9B1D2AA6860090C57B /* ic_close.png in Resources */,
+				CB7A94A21D2F83D1006B93D9 /* ic_close.png in Resources */,
 				CBA48A1F1D2DE84E00FCBAAC /* LICENSE in Resources */,
 				CB19327D1D2A9D78000F0916 /* Assets.xcassets in Resources */,
 				CBA48A4C1D2E016F00FCBAAC /* LICENSE in Resources */,
